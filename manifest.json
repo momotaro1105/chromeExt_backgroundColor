@@ -1,0 +1,20 @@
+{
+    "name": "bgColor",
+    "description": "Change backgroundColor of <body> tag",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "author": "Kenta Aratani",
+    "action": {
+        "default_popup": "bgColor.html"
+    },
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "content_scripts": [
+        {
+            "js": ["bgColor.js"],
+            "matches": ["<all_urls>"]
+        }
+    ]
+}
